@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrowdFunding</title>
+    <link rel="stylesheet" href="Layouts/css/style.css">
+    <link rel="stylesheet" href="fonts/fontawessome/css/all.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Commissioner">
+    <style>
+        header{
+            background-image: url('Layouts/image/image-hero-mobile.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media (min-width: 768px) {
+             header{
+            background-image: url('Layouts/image/image-hero-desktop.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+             }
+        }
+    </style>
+</head>
+<body class="text-base bg-slate">
+
+    <!-- texting/output starts -->
+   <div id="body">
+
+   </div>
+    <!-- texting/output ends -->
+
+
+    <!-- my header section -->
+    <header class="pt-6 pb-14 md:pt-3 md:pb-72">
+        <!-- my nav bar -->
+        <nav class="pt-5 w-10/12 md:w-10/12 mx-auto">
+           
+            <!-- nav bar containner -->
+            <div class="flex justify-between" id="nav-bar-cont">
+                 <!-- logo container -->
+            <div class="" id="nav-logo">
+                <!-- logo image -->
+                <img src="Layouts/image/logo.svg" alt="CrowdFunding logo">
+            </div>
+            
+            <!-- toggle bar container -->
+            <div class="md:hidden" id="toggle-bar-cont">
+                <!-- toggle bar -->
+                <a class="text-white text-2xl" id="toggle-bar-nav" href="#"> <i class="fas fa-bars"></i></a>
+
+                <!-- cancel sign -->
+                <a class="text-white text-2xl hidden" id="cancel-sign-nav" href="#"> <i class="fas fa-times"></i></a>
+            </div>
+
+            <!-- my nav for tablet and desktop to be display none on mobile -->
+            <div class="md:flex md:justify-around md:w-1/2 hidden z-10" id="nav-items-desktop">
+                <div class="" id="about">
+                    <a class="text-lg text-lgray" href="#">About</a>
+                </div>
+
+                <div class="" id="discover">
+                    <a class="text-lg text-lgray" href="#">Discover</a>
+                </div>
+
+                <div class="" id="get-startd">
+                    <a class="text-lg text-lgray" href="#">Get Started</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- my nav items for mobile to be displayed none on desktop-->
+            <div class="bg-white rounded-2xl mt-11 invisible md:hidden z-20" id="nav-items-mobile">
+                <div class="px-5 py-6" id="about">
+                    <a class="text-2xl" href="#">About</a>
+                </div>
+
+                <div class="px-5 py-6" id="discover">
+                    <a class="text-2xl" href="#">Discover</a>
+                </div>
+
+                <div class="px-5 py-6" id="get-startd">
+                    <a class="text-2xl" href="#">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- my main container -->
+   <main class="bg-white w-10/12 mx-auto md:w-9/12 lg:w-1/2 relative z-0 bottom-24 rounded-xl">
+       <!-- container for my mastercraft logo and booked mark -->
+      <div class="w-full mb-5 rounded-xl" id="main main1">
+           <div class="relative bottom-7 flex justify-center items-center" id="image-cont">
+           <img class="" src="Layouts/image/logo-mastercraft.svg" alt="">
+       </div>
+
+       <!-- mastercraft text -->
+       <h1 class="text-2xl px-5 py-3 text-center font-bold">Mastercraft Bamboo Monitor Riser</h1>
+
+       <p class="text-dgray px-5 py-3 text-center text-base m-1">
+           A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+       </p>
+
+       <!--back this project and bookmark  container-->
+       <div class="flex justify-between px-6 py-4" id="back-project-bookmark">
+            <div class="w-9/12 md:w-1/3 bg-dcyan rounded-3xl p-4 m-2" id="back-project">
+                <a class="text-white flex justify-center items-center" href="#">Back this project</a>
+            </div>
+
+            <div class="w-3/12 md:w-1/3 flex m-2" id="bookmark">
+                <a class="bg-black p-4 w-full md:w-1/2 rounded-3xl text-white text-lg flex justify-center items-center"  href="#"><i class="fas fa-bookmark"></i></a>
+                <p class="hidden pl-3 md:flex justify-center items-center">Bookmark</p>
+            </div>
+       </div>
+      </div>
+
+      <!-- container for numbers of booked and days left -->
+      <div class="w-full mb-5 rounded-xl pb-5 md:grid grid-cols-3" id="main2 main">
+            <div class="text-center w-1/2 mx-auto py-6 md:w-full" id="of-backed">
+                <h1 class="font-bold text-4xl text-black">$89,914</h1>
+                <small class="text-base text-dgray">of $100,000 backed</small>
+                <p class="h-0.5 bg-lgray mt-8"></p>
+            </div>
+
+            <div class="text-center w-1/2 mx-auto py-6" id="total-backers">
+                <h1 class="font-bold text-4xl text-black">5,007 </h1>
+                <small class="text-base text-dgray">total backers</small>
+                <p class="h-0.5 bg-lgray mt-8"></p>
+            </div>
+
+            <div class="text-center w-1/2 mx-auto py-6"  id="days-left">
+                <h1 class="font-bold text-4xl text-black">56</h1>
+                <small class="text-base text-dgray">days left</small>
+                <p class="h-0.5 bg-lgray mt-8"></p>
+            </div>
+
+            <div class="bg-slate rounded-xl mx-2 my-4 md:w-full md:col-span-3" id="">
+                <div class="bg-mcyan h-4 w-1/2 rounded-xl"></div>
+            </div>
+      </div>
+
+      <!-- about this prject section -->
+      <div class="w-full mb-5 rounded-xl" id="about-project">
+          <h2 class="text-xl px-8 pb-5 pt-10 font-bold">
+              About this project
+          </h2>
+
+          <p class="px-8 text-dgray text-justify py-2 text-base">
+              The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+              to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+              your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+          </p>
+
+          <p class="px-8 text-dgray text-justify pt-3 pb-6 text-base">
+               Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+               to allow notepads, pens, and USB sticks to be stored under the stand.
+          </p>
+
+          <!-- bamboo Stand container -->
+          <div class="mx-8 border-2 border-lgray rounded-lg my-5" id="bamboo-stand">
+                <h2 class="text-base font-bold px-7 pt-6">Bamboo Stand</h2>
+                <p class="px-7 text-base text-mcyan pt-1 pb-6">Pledge $25 or more</p>
+                <p class="px-7 text-base text-dgray text-justify pb-5">
+                    You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+                    you’ll be added to a special Backer member list.
+                </p>
+               <div class="grid grid-cols-1 md:flex md:justify-between px-7 md:my-9">
+                    <p class="font-bold text-4xl">101 <small class="text-base text-dgray">left</small></p>
+              
+                     <button class="bg-mcyan p-5 text-white rounded-3xl my-9 md:my-0" id="bamboo-stand-btn">Select Reward</button>
+               </div>
+          </div>
+
+          <!-- Black Edition Stand container -->
+          <div class="mx-8 border-2 border-lgray rounded-lg my-5" id="black-edition-stand">
+                <h2 class="text-base font-bold px-7 pt-6">Black Edition Stand</h2>
+                <p class="px-7 text-base text-mcyan pt-1 pb-6">Pledge $75 or more</p>
+                <p class="px-7 text-base text-dgray text-justify pb-5">
+                    You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+                    member list. Shipping is included.
+                </p>
+               <div class="grid grid-cols-1 md:flex md:justify-between px-7 md:my-9">
+                    <p class="font-bold text-4xl">64 <small class="text-base text-dgray">left</small></p>
+              
+                     <button class="bg-mcyan p-5 text-white rounded-3xl my-9 md:my-0" id="black-edition-stand-btn">Select Reward</button>
+               </div>
+          </div>
+
+          <!-- Mahogany Special Edition container -->
+          <div class="mx-8 border-2 border-lgray rounded-lg my-5" id="Special-edition">
+                <h2 class="text-base font-bold px-7 pt-6">Mahogany Special Edition</h2>
+                <p class="px-7 text-base text-mcyan pt-1 pb-6">Pledge $200 or more</p>
+                <p class="px-7 text-base text-dgray text-justify pb-5">
+                    You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+                     to our Backer member list. Shipping is included.
+                </p>
+               <div class="grid grid-cols-1 md:flex md:justify-between px-7 md:my-9">
+                    <p class="font-bold text-4xl">5 <small class="text-base text-dgray">left</small></p>
+              
+                     <button class="bg-mcyan p-5 text-white rounded-3xl my-9 md:my-0" id="Special-edition-btn">Select Reward</button>
+               </div>
+          </div>
+      </div>
+   </main>
+   
+    <script src="/Layouts/Js/ui.js"></script>
+    <script src="/Layouts/Js/app.js"></script>
+</body>
+</html>
